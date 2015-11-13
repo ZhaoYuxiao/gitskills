@@ -1,0 +1,16 @@
+<input value="请输入搜索内容" onfocus="javascript:this.value=''" type="text" id="ipt1" />
+<input value="提交" type="Submit" id="btn1" onclick="checkform()" />
+<script type="text/javascript">    
+function checkform(){ 
+    if(document.getElementById('ipt1').value.length==0){    
+        alert('输入为空！');
+        document.getElementById('ipt1').focus();
+        return false;
+    }
+    if(document.getElementById('ipt1').value=="请输入搜索内容"){    
+        alert('输入为空！');
+        document.getElementById('ipt1').focus();
+        return false;
+    }
+}
+</script>
